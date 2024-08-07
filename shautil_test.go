@@ -14,6 +14,7 @@ func TestChecksum(t *testing.T) {
 	*s256 = false
 	*s384 = false
 	*s512 = false
+	*verb = true
 
 	if !*s256 && !*s384 && !*s512 {
 		chSum := Checksum("1")
@@ -35,6 +36,7 @@ func TestChecksum256(t *testing.T) {
 	*s256 = true
 	*s384 = false
 	*s512 = false
+	*verb = true
 
 	if *s256 && !*s384 && !*s512 {
 		chSum := Checksum("1")
@@ -56,6 +58,7 @@ func TestChecksum384(t *testing.T) {
 	*s256 = false
 	*s384 = true
 	*s512 = false
+	*verb = true
 
 	if *s256 && *s384 && !*s512 {
 		chSum := Checksum("1")
@@ -77,6 +80,7 @@ func TestChecksum512(t *testing.T) {
 	*s256 = false
 	*s384 = false
 	*s512 = true
+	*verb = true
 
 	if !*s256 && !*s384 && *s512 {
 		chSum := Checksum("1")

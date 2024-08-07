@@ -26,3 +26,4 @@
 --- PASS: TestChecksum512 (0.00s)
 PASS
 ok  	shautil	0.002s
+

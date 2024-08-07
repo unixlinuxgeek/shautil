@@ -92,3 +92,4 @@ func TestChecksum512(t *testing.T) {
 		}
 	}
 }
+

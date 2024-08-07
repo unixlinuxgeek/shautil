@@ -38,3 +38,4 @@ func Checksum(s string) string {
 	}
 	return ""
 }
+
